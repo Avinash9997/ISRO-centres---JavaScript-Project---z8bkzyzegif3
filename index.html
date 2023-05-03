@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Avinash_Ghanghav">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISRO CENTRE FINDER</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="head">
+        <div class="logo">
+          <img src="ISRO-Color.png" alt="ISRO_Logo" />
+        </div>
+
+        <h1>Indian Space Research Organization</h1>
+        <!-- <div style="display: flex; align-items: flex-end">
+          <img
+            src="satyamev-jayate-logo.png"
+            alt="Satyamev Jayate Logo"
+            style="height: 90px"
+          />
+        </div> -->
+      </section>
+
+      <h2>Search for ISRO centers based on City,State and Centre Name</h2>
+
+      <section class="head">
+        <div class="search-bar">
+          <input type="text" placeholder="search here...." required />
+          <i class="search-btn fa-solid fa-magnifying-glass ripple"></i>
+        </div>
+        <div class="filter-buttons">
+          <button id="City" value="Place">CITY</button>
+          <button id="State" value="State">STATE</button>
+          <button id="centre" value="name">CENTRE</button>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="centre-info">
+        <h3>CENTER NAME</h3>
+        <h3>CITY</h3>
+        <h3>STATE</h3>
+      </section>
+      <section id="centre-data"></section>
+    </main>
+  </body>
+</html>
